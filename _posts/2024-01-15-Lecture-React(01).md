@@ -1,6 +1,6 @@
 ---
 # 👨‍💻 (project) 📌 (fixed) 📖 (What to Learn)  🌱 (Link) 🧷(#3) 📌(#4) 👀(Recap)
-title: ReactJS로 영화 웹 서비스 만들기 (01) -JSX
+title: ReactJS로 영화 웹 서비스 만들기 (01) - JSX
 author: bokyung
 date: 2024-01-15 00:00:00 +0800
 toc: true
@@ -107,8 +107,8 @@ JavaScript를 확장한 문법
         );
        const Button = () => (
         <button 
-            style={{backgroundColor: "tomato",
-            }}
+            {%- assign styles = "backgroundColor: tomato;" -%}
+            style="{{ styles }}"
             onClick={() => console.log("im clicked")}
         >
             Click me
@@ -169,8 +169,8 @@ Babel의 [Try it out](https://babeljs.io/repl) 페이지에서 내가 작성한 
         );
        const Button = () => (
         <button 
-            style={{backgroundColor: "tomato",
-            }}
+            {%- assign styles = "backgroundColor: tomato;" -%}
+            style="{{ styles }}"
             onClick={() => console.log("im clicked")}
         >
             Click me

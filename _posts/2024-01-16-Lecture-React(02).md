@@ -1,6 +1,6 @@
 ---
 # 👨‍💻 (project) 📌 (fixed) 📖 (What to Learn)  🌱 (Link) 🧷(#3) 📌(#4) 👀(Recap)
-title: ReactJS로 영화 웹 서비스 만들기 (02) -React
+title: ReactJS로 영화 웹 서비스 만들기 (02) - React
 author: bokyung
 date: 2024-01-16 00:00:00 +0800
 toc: true
@@ -18,57 +18,6 @@ image: https://nomadcoders.co/_next/image?url=https%3A%2F%2Fd1telmomo28umc.cloud
 UI를 interactive(상호작용)하게 만들어준다!
 
 <br>
-
-> ## Vanilla JS  vs  React JS
-
-버튼을 클릭한 만큼 count가 증가되는 간단한 프로젝트를 만들어 VanillaJS와 ReactJS를 비교해보자!
-
-<br>
-
-<html lang="en">
-    <body>
-        <h3 id="click">Total clicks: 0</h3>
-        <button id="btn">Click me</button>
-    </body>
-    <script>
-        let counter = 0;
-        const button = document.getElementById("btn");
-        const h3 = document.getElementById("click");
-        function handleClick(){
-            counter = counter + 1;
-            h3.innerText = `Total clicks: ${counter}`;
-        }
-        button.addEventListener("click", handleClick);
-    </script>
-</html>
-
-<br>
-
-- Vanilla JS ver.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-    <body>
-        <h3 id="click">Total clicks: 0</h3>
-        <button id="btn">Click me</button>
-    </body>
-    <script>
-        let counter = 0;
-        const button = document.getElementById("btn");
-        const h3 = document.getElementById("click");
-        function handleClick(){
-            counter = counter + 1;
-            h3.innerText = `Total clicks: ${counter}`;
-        }
-        button.addEventListener("click", handleClick);
-    </script>
-</html>
-```
-
-<br>
-
-- React JS ver.
 
 <details>
 <summary>이해를 위한 복잡한 React ver.</summary>
@@ -152,5 +101,3 @@ React는 **JS -> HTML** 순서
 HTML을 만들고, 찾아서 가져오고, 그리고 나서 업데이트하고,,,~ 이런 식으로 하지 않는다!
 리액트한테 업데이트해야 하는 HTML을 업데이트하라고 할 것임!
 **Javascript를 이용해 element를 생성하고, React JS가 그걸 HTML로 번역하는 것**
-
-<br>
