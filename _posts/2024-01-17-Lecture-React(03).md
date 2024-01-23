@@ -1,6 +1,5 @@
 ---
-# 👨‍💻 (project) 📌 (fixed) 📖 (What to Learn)  🌱 (Link) 🧷(#3) 📌(#4) 👀(Recap)
-title: ReactJS로 영화 웹 서비스 만들기 (03) - React의 State (1)
+title: 🎬 ReactJS로 영화 웹 서비스 만들기 (03) - React의 State (1)
 author: bokyung
 date: 2024-01-17 00:00:00 +0800
 toc: true

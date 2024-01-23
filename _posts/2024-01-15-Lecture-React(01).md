@@ -1,6 +1,5 @@
 ---
-# 👨‍💻 (project) 📌 (fixed) 📖 (What to Learn)  🌱 (Link) 🧷(#3) 📌(#4) 👀(Recap)
-title: ReactJS로 영화 웹 서비스 만들기 (01) - JSX
+title: 🎬 ReactJS로 영화 웹 서비스 만들기 (01) - JSX
 author: bokyung
 date: 2024-01-15 00:00:00 +0800
 toc: true
@@ -54,38 +53,40 @@ JavaScript를 확장한 문법
 ```html
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <div id="root"></div>
-    </body>
-    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
-    <script>
-        const root = document.getElementById("root");
-        const h3 = React.createElement(
-            "h3", {
-                id: "title",
-                onMouseEnter: () => console.log("mouse enter"),
-            }, 
-            "Hello I'm a title"
-            );
-    
-        const btn = React.createElement(
-            "button", 
-            {
-                onClick: () => console.log("im clicked"),
-                style: {
-                    backgroundColor: "tomato",
-                },
-            }, 
-            "Click me"
-        );
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script>
+    const root = document.getElementById("root");
+    const h3 = React.createElement(
+      "h3",
+      {
+        id: "title",
+        onMouseEnter: () => console.log("mouse enter")
+      },
+      "Hello I'm a title"
+    );
 
-        // 배열을 이용해서 여러 요소를 한번에 render
-        const container = React.createElement("div", null, [h3, btn]);
-        ReactDOM.render(container, root);
-    </script>
+    const btn = React.createElement(
+      "button",
+      {
+        onClick: () => console.log("im clicked"),
+        style: {
+          backgroundColor: "tomato"
+        }
+      },
+      "Click me"
+    );
+
+    // 배열을 이용해서 여러 요소를 한번에 render
+    const container = React.createElement("div", null, [h3, btn]);
+    ReactDOM.render(container, root);
+  </script>
 </html>
 ```
+
 <br>
 - jsx 이용한 코드
 
@@ -106,7 +107,7 @@ JavaScript를 확장한 문법
             </h3>
         );
        const Button = () => (
-        <button 
+        <button
             {%- assign styles = "backgroundColor: tomato;" -%}
             style="{{ styles }}"
             onClick={() => console.log("im clicked")}
@@ -114,7 +115,7 @@ JavaScript를 확장한 문법
             Click me
         </button>
        );
-       
+
        const Container = () => (
             <div>
                 <Title />
@@ -156,11 +157,11 @@ Babel의 [Try it out](https://babeljs.io/repl) 페이지에서 내가 작성한 
         <div id="root"></div>
     </body>
     <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script> 
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
     <!-- Babel 적용을 위해 코드 추가-->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <!-- Babel 적용을 위해 코드 추가-->
-    <script type="text/babel"> 
+    <script type="text/babel">
         const root = document.getElementById("root");
         const Title = () => (
             <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
@@ -168,7 +169,7 @@ Babel의 [Try it out](https://babeljs.io/repl) 페이지에서 내가 작성한 
             </h3>
         );
        const Button = () => (
-        <button 
+        <button
             {%- assign styles = "backgroundColor: tomato;" -%}
             style="{{ styles }}"
             onClick={() => console.log("im clicked")}
@@ -176,7 +177,7 @@ Babel의 [Try it out](https://babeljs.io/repl) 페이지에서 내가 작성한 
             Click me
         </button>
        );
-       
+
        const Container = () => (
             <div>
                 <Title />

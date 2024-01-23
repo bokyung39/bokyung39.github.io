@@ -7,6 +7,7 @@ tags: [typography]
 pin: false
 math: true
 mermaid: true
+published: false
 image:
   path: /commons/devices-mockup.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
@@ -18,15 +19,19 @@ This post is to show Markdown syntax rendering on [**Chirpy**](https://github.co
 ## Headings
 
 # H1 - heading
+
 {: .mt-4 .mb-0 }
 
 ## H2 - heading
+
 {: data-toc-skip='' .mt-4 .mb-0 }
 
 ### H3 - heading
+
 {: data-toc-skip='' .mt-4 .mb-0 }
 
 #### H4 - heading
+
 {: data-toc-skip='' .mt-4 }
 
 ## Paragraph
@@ -44,15 +49,15 @@ Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas int
 ### Unordered list
 
 - Chapter
-  + Section
-    * Paragraph
+  - Section
+    - Paragraph
 
 ### ToDo list
 
 - [ ] Job
-  + [x] Step 1
-  + [x] Step 2
-  + [ ] Step 3
+  - [x] Step 1
+  - [x] Step 2
+  - [ ] Step 3
 
 ### Description list
 
@@ -69,24 +74,24 @@ Moon
 ## Prompts
 
 > An example showing the `tip` type prompt.
-{: .prompt-tip }
+> {: .prompt-tip }
 
 > An example showing the `info` type prompt.
-{: .prompt-info }
+> {: .prompt-info }
 
 > An example showing the `warning` type prompt.
-{: .prompt-warning }
+> {: .prompt-warning }
 
 > An example showing the `danger` type prompt.
-{: .prompt-danger }
+> {: .prompt-danger }
 
 ## Tables
 
 | Company                      | Contact          | Country |
-|:-----------------------------|:-----------------|--------:|
+| :--------------------------- | :--------------- | ------: |
 | Alfreds Futterkiste          | Maria Anders     | Germany |
-| Island Trading               | Helen Bennett    | UK      |
-| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
+| Island Trading               | Helen Bennett    |      UK |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli |   Italy |
 
 ## Links
 
@@ -128,13 +133,14 @@ fi;
   "colors/light-typography",
   "colors/dark-typography";
 ```
-{: file='_sass/jekyll-theme-chirpy.scss'}
+
+{: file='\_sass/jekyll-theme-chirpy.scss'}
 
 ## Mathematics
 
 The mathematics powered by [**MathJax**](https://www.mathjax.org/):
 
-$$ \sum_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6} $$
+$$ \sum\_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6} $$
 
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 
