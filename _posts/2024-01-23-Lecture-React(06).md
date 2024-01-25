@@ -12,5 +12,5 @@ image: https://nomadcoders.co/_next/image?url=https%3A%2F%2Fd1telmomo28umc.cloud
 
 > ## Props
 
-Props는 부모 컨포넌트로부터 자식 컴포넌트에 데이터를 보낼 수 있게 해주는 방법이라고 할 수 있다
+Props는 부모 컨포넌트로부터 자식 컴포넌트에 데이터를 보낼 수 있게 해주는 방법이라고 할 수 있다!
 <br>
