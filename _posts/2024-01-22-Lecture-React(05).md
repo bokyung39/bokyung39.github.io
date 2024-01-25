@@ -15,124 +15,143 @@ State를 좀 더 제대로 이해하기 위해 간단한 단위변환기 app을 
 #### **🔽 결과물 🔽**
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>React Converter App</title>
+  </head>
   <body>
     <div id="root"></div>
+    <script
+      src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/@babel/standalone/babel.min.js"
+      crossorigin
+    ></script>
+    <script type="text/babel">
+      function MinutesToHours() {
+        const [amount, setAmount] = React.useState(0);
+        const [inverted, setInverted] = React.useState(false);
+        const onChange = (event) => {
+          setAmount(event.target.value);
+        };
+        const reset = () => setAmount(0);
+        const onInvert = () => {
+          reset();
+          setInverted((current) => !current);
+        };
+        return (
+          <div>
+            <h3>Min to Hour</h3>
+            <div>
+              <label htmlFor="minutes">Minutes</label>
+              <input
+                value={inverted ? amount * 60 : amount}
+                id="minutes"
+                placeholder="Minutes"
+                type="number"
+                onChange={onChange}
+                disabled={inverted}
+              />
+            </div>
+            <div>
+              <label htmlFor="hours">Hours</label>
+              <input
+                value={inverted ? amount : Math.round(amount / 60)}
+                id="hours"
+                placeholder="Hours"
+                type="number"
+                onChange={onChange}
+                disabled={!inverted}
+              />
+            </div>
+            <button onClick={reset}>Reset</button>
+            <button onClick={onInvert}>
+              {inverted ? "Turn back" : "Invert"}
+            </button>
+          </div>
+        );
+      }
+      function KmToMiles() {
+        const [amount, setAmount] = React.useState(0);
+        const [inverted, setInverted] = React.useState(false);
+        const onChange = (event) => {
+          setAmount(event.target.value);
+        };
+        const reset = () => setAmount(0);
+        const onInvert = () => {
+          reset();
+          setInverted((current) => !current);
+        };
+        return (
+          <div>
+            <h3>KM 2 M</h3>
+            <div>
+              <label htmlFor="km">KM</label>
+              <input
+                value={inverted ? amount * 1.609 : amount}
+                id="km"
+                placeholder="KM"
+                type="number"
+                onChange={onChange}
+                disabled={inverted}
+              />
+            </div>
+            <div>
+              <label htmlFor="miles">Miles</label>
+              <input
+                value={inverted ? amount : amount / 1.609}
+                id="miles"
+                placeholder="Miles"
+                type="number"
+                onChange={onChange}
+                disabled={!inverted}
+              />
+            </div>
+            <button onClick={reset}>Reset</button>
+            <button onClick={onInvert}>
+              {inverted ? "Turn back" : "Invert"}
+            </button>
+          </div>
+        );
+      }
+      function App() {
+        const [index, setIndex] = React.useState("xx");
+        const onSelect = (event) => {
+          setIndex(event.target.value);
+        };
+        return (
+          <div>
+            <h1>Super Converter</h1>
+            <select value={index} onChange={onSelect}>
+              <option value="xx">Select your units</option>
+              <option value="0">Minutes & Hours</option>
+              <option value="1">Km & Miles</option>
+            </select>
+            <hr />
+            {index === "xx" ? (
+              <p>Please select your units</p>
+            ) : index === "0" ? (
+              <MinutesToHours />
+            ) : (
+              <KmToMiles />
+            )}
+          </div>
+        );
+      }
+      const root = document.getElementById("root");
+      ReactDOM.render(<App />, root);
+    </script>
   </body>
-  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script type="text/babel">
-    function MinutesToHours() {
-      const [amount, setAmount] = React.useState(0);
-      const [inverted, setInverted] = React.useState(false);
-      const onChange = (event) => {
-        setAmount(event.target.value);
-      };
-      const reset = () => setAmount(0);
-      const onInvert = () => {
-        reset();
-        setInverted((current) => !current);
-      };
-      return (
-        <div>
-          <h3>Min to Hour</h3>
-          <div>
-            <lable htmlFor="minutes">Minutes</lable>
-            <input
-              value={inverted ? amount * 60 : amount}
-              id="minutes"
-              placeholder="Minutes"
-              type="number"
-              onChange={onChange}
-              disabled={inverted}
-            />
-          </div>
-          <div>
-            <lable htmlFor="hours">Hours</lable>
-            <input
-              value={inverted ? amount : Math.round(amount / 60)}
-              id="hours"
-              placeholder="Hours"
-              type="number"
-              onChange={onChange}
-              disabled={!inverted}
-            />
-          </div>
-          <button onClick={reset}>Reset</button>
-          <button onClick={onInvert}>
-            {inverted ? "Turn back" : "Invert"}
-          </button>
-        </div>
-      );
-    }
-    function KmToMiles() {
-      const [amount, setAmount] = React.useState(0);
-      const [inverted, setInverted] = React.useState(false);
-      const onChange = (event) => {
-        setAmount(event.target.value);
-      };
-      const reset = () => setAmount(0);
-      const onInvert = () => {
-        reset();
-        setInverted((current) => !current);
-      };
-      return (
-        <div>
-          <h3>KM 2 M</h3>
-          <div>
-            <lable htmlFor="km">KM</lable>
-            <input
-              value={inverted ? amount * 1.609 : amount}
-              id="km"
-              placeholder="KM"
-              type="number"
-              onChange={onChange}
-              disabled={inverted}
-            />
-          </div>
-          <div>
-            <lable htmlFor="miles">Miles</lable>
-            <input
-              value={inverted ? amount : amount / 1.609}
-              id="miles"
-              placeholder="Miles"
-              type="number"
-              onChange={onChange}
-              disabled={!inverted}
-            />
-          </div>
-          <button onClick={reset}>Reset</button>
-          <button onClick={onInvert}>
-            {inverted ? "Turn back" : "Invert"}
-          </button>
-        </div>
-      );
-    }
-    function App() {
-      const [index, setIndex] = React.useState("xx");
-      const onSelect = (event) => {
-        setIndex(event.target.value);
-      };
-      return (
-        <div>
-          <h1>Super Converter</h1>
-          <select value={index} onChange={onSelect}>
-            <option value="xx">Select your units</option>
-            <option value="0">Minutes & Hours</option>
-            <option value="1">Km & Miles</option>
-          </select>
-          <hr />
-          {index === "xx" ? "Please select your units" : null}
-          {index === "0" ? <MinutesToHours /> : null}
-          {index === "1" ? <KmToMiles /> : null}
-        </div>
-      );
-    }
-
-    const root = document.getElementById("root");
-    ReactDOM.render(<App />, root);
-
-  </script>
 </html>
 
 <br>
@@ -164,7 +183,7 @@ State를 좀 더 제대로 이해하기 위해 간단한 단위변환기 app을 
         <div>
           <h3>Min to Hour</h3>
           <div>
-            <lable htmlFor="minutes">Minutes</lable>
+            <label htmlFor="minutes">Minutes</label>
             <input
               value={inverted ? amount * 60 : amount}
               id="minutes"
@@ -175,7 +194,7 @@ State를 좀 더 제대로 이해하기 위해 간단한 단위변환기 app을 
             />
           </div>
           <div>
-            <lable htmlFor="hours">Hours</lable>
+            <label htmlFor="hours">Hours</label>
             <input
               value={inverted ? amount : Math.round(amount / 60)}
               id="hours"
@@ -207,7 +226,7 @@ State를 좀 더 제대로 이해하기 위해 간단한 단위변환기 app을 
         <div>
           <h3>KM 2 M</h3>
           <div>
-            <lable htmlFor="km">KM</lable>
+            <label htmlFor="km">KM</label>
             <input
               value={inverted ? amount * 1.609 : amount}
               id="km"
@@ -218,7 +237,7 @@ State를 좀 더 제대로 이해하기 위해 간단한 단위변환기 app을 
             />
           </div>
           <div>
-            <lable htmlFor="miles">Miles</lable>
+            <label htmlFor="miles">Miles</label>
             <input
               value={inverted ? amount : amount / 1.609}
               id="miles"
