@@ -14,10 +14,10 @@ image: https://nomadcoders.co/_next/image?url=https%3A%2F%2Fd1telmomo28umc.cloud
 React JS에서 데이터를 저장시켜 자동으로 리렌더링을 일으킬 수 있는 방법에 이용된다
 <br>
 
-![image](https://github.com/bokyung39/intro-me/assets/72790694/da695db4-6ef4-4172-9cf1-90df2940bf3a)
+![image](https://github.com/bokyung39/intro-me/assets/72790694/da695db4-6ef4-4172-9cf1-90df2940bf3a){: width="100%" height="100%" .normal}
 
 이렇게 `const data = React.useState();`를 `console.log` 찍어보면
-![image](https://github.com/bokyung39/intro-me/assets/72790694/1114bbab-6ece-4ce1-8375-c7d7706b4f42)
+![image](https://github.com/bokyung39/intro-me/assets/72790694/1114bbab-6ece-4ce1-8375-c7d7706b4f42){: width="100%" height="100%" .normal}
 
 `undefined`와 함수가 적힌 배열이 찍히는 것을 볼 수 있다<br>
 `undefined`는 `data`이고, `f`는 `data`를 바꿀 때 사용하는 함수이다<br>
@@ -83,7 +83,7 @@ React JS에서 데이터를 저장시켜 자동으로 리렌더링을 일으킬 
 </html>
 ```
 
-![제목 없는 동영상 - Clipchamp로 제작 (1)](https://github.com/bokyung39/intro-me/assets/72790694/4680480f-1518-4cad-b299-f8cf265248ce)
+![제목 없는 동영상 - Clipchamp로 제작 (1)](https://github.com/bokyung39/intro-me/assets/72790694/4680480f-1518-4cad-b299-f8cf265248ce){: width="100%" height="100%" .normal}
 
 Vanilla JS에서는 h3 전체가 업데이트되고 있는 것을 확인할 수 있다.
 
@@ -119,7 +119,7 @@ Vanilla JS에서는 h3 전체가 업데이트되고 있는 것을 확인할 수 
 </html>
 ```
 
-![제목 없는 동영상 - Clipchamp로 제작 (6)](https://github.com/bokyung39/intro-me/assets/72790694/57f8d4d6-0c87-48de-b8bf-a90fa29ed7f6)
+![제목 없는 동영상 - Clipchamp로 제작 (6)](https://github.com/bokyung39/intro-me/assets/72790694/57f8d4d6-0c87-48de-b8bf-a90fa29ed7f6){: width="100%" height="100%" .normal}
 
 React에서는 **변경된 부분만** 리렌더링되는 것을 확인할 수 있다 !<br>
 즉, React에서는 state가 바뀔 때마다 컴포넌트 전체가 rerendering이 일어나는데,<br>

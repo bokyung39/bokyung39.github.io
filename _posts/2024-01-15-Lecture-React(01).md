@@ -133,8 +133,7 @@ JavaScript를 확장한 문법
 그런데 ! <br>
 저렇게만 작성하고 결과를 확인해보면 아래 사진과 같은 에러가 발생한다 😕
 
-![image](https://github.com/bokyung39/intro-me/assets/72790694/42a9d80b-132c-4d11-bfc4-f9727fd16bf6)
-{: width="100%" height="100%" .normal}
+![image](https://github.com/bokyung39/intro-me/assets/72790694/42a9d80b-132c-4d11-bfc4-f9727fd16bf6){: width="100%" height="100%" .normal}
 
 그 이유는 바로 <br>
 브라우저가 온전히 JSX를 이해하는 것은 아니기 때문! <br>
@@ -189,7 +188,7 @@ Babel의 [Try it out](https://babeljs.io/repl) 페이지에서 내가 작성한 
 </html>
 ```
 
-![제목 없는 동영상 - Clipchamp로 제작 (5)](https://github.com/bokyung39/intro-me/assets/72790694/12ef2701-6cd5-4373-9cba-34da110751f7)
+![제목 없는 동영상 - Clipchamp로 제작 (5)](https://github.com/bokyung39/intro-me/assets/72790694/12ef2701-6cd5-4373-9cba-34da110751f7){: width="100%" height="100%" .normal}
 
 <br>
 잘 작동하는 것을 확인 할 수 있다 !
