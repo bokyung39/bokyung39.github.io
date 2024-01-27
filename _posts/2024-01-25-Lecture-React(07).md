@@ -89,4 +89,4 @@ MemorizedBtn라는 것을 만들어 적용시켜주면
 ![제목 없는 동영상 - Clipchamp로 제작 (9)](https://github.com/bokyung39/intro-me/assets/72790694/951d75db-3a40-46da-bb39-3d52100b52bb){: width="100%" height="100%" .normal}
 
 첫번째 버튼만 다시 그려진 것을 알 수 있다 !! <br>
-Cooooool
+Coooool
