@@ -10,7 +10,8 @@ tags: [React, Props, Memo]
 image: https://nomadcoders.co/_next/image?url=https%3A%2F%2Fd1telmomo28umc.cloudfront.net%2Fmedia%2Fpublic%2Fthumbnails%2Freact-for-beginners.jpeg&w=1920&q=75
 ---
 
-이번에는 부모 컴포넌트(`App()`)가 state(상태)를 변경할 때 다른 컴포넌트들에게는 어떤 일이 일어날지 알아보자 !<br>
+이번에는 부모 컴포넌트(`App()`)가 state(상태)를 변경할 때 다른 컴포넌트들에게는 어떤 일이 일어날지 알아보자 !
+<br>
 <br>
 
 > ## props에 function
