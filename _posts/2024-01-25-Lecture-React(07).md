@@ -1,5 +1,5 @@
 ---
-title: 🎬 ReactJS로 영화 웹 서비스 만들기 (06) - Props, Memo
+title: 🎬 ReactJS로 영화 웹 서비스 만들기 (07) - Props, Memo
 author: bokyung
 date: 2024-01-25 00:00:00 +0800
 toc: true
