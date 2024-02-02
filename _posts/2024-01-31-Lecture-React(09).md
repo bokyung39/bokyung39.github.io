@@ -15,4 +15,5 @@ image: https://nomadcoders.co/_next/image?url=https%3A%2F%2Fd1telmomo28umc.cloud
 <br>
 
 삭제 기능, 최대 10개 까지만 작성 가능하도록 제한, 간단한 스타일 추가해서 배포해보았다ㅎ<br><br>
-[확인하러가기💨💨](https://bokyung39.github.io/React-Todo/)
+
+#### 🖥️ [확인하러가기💨💨](https://bokyung39.github.io/React-Todo/)
