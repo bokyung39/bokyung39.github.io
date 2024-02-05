@@ -11,7 +11,7 @@ tags: [React, Coin Tracker, Coin API]
 image: https://nomadcoders.co/_next/image?url=https%3A%2F%2Fd1telmomo28umc.cloudfront.net%2Fmedia%2Fpublic%2Fthumbnails%2Freact-for-beginners.jpeg&w=1920&q=75
 ---
 
-이번에는 Coin Tracker를 만들어보면서 useEffect를 포함한 내용들을 연습해보도록 하겠다!
+이번에는 useEffect를 포함한 내용들을 이용해 Coin Tracker를 만들어보도록 하겠다!
 <br>
 <br>
 사용할 coin API는 <https://api.coinpaprika.com/v1/tickers> 이것!
