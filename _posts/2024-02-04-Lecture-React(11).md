@@ -2,7 +2,7 @@
 # {: width="100%" height="100%" .normal}
 title: 🎬 ReactJS로 영화 웹 서비스 만들기 (11) - Moive App 만들기
 author: bokyung
-date: 2024-02-03 00:00:00 +0800
+date: 2024-02-04 00:00:00 +0800
 toc: true
 pin: false
 published: true
