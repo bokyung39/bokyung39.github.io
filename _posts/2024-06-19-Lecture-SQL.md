@@ -1,5 +1,5 @@
 ---
-title: 📟 SQL & Database (03) - sql문 작성할 때 유의해야 할 것들 모음
+title: 📟 SQL & Database - sql문 작성할 때 유의해야 할 것들 모음📂
 author: bokyung
 date: 2024-06-19 00:00:00 +0800
 toc: true
@@ -9,7 +9,8 @@ categories: [Lecture, 한 번에 끝내는 SQL & Database]
 tags: [SQL, MariaDB, Database, RDBMS]
 image: https://codingapple.com/wp-content/uploads/2022/09/%EC%83%81%ED%92%88%EC%82%AC%EC%A7%84%EC%98%A8%EB%9D%BC%EC%9D%B8-%EB%B3%B5%EC%82%AC23.png
 ---
-
+<!-- 글자색 넣기 <span style="color: #239ED0">    </span>  -->
+<!-- 띄어쓰기   &nbsp;   -->
 <br>
 <br>
 학습환경 : Windows, MariaDB, DBeaver
@@ -34,7 +35,13 @@ image: https://codingapple.com/wp-content/uploads/2022/09/%EC%83%81%ED%92%88%EC%
  ```
 
  결과는 같음!
+<br>
+<br>
+
+> ## 서브쿼리
 
 <br>
-<br>
+문자나 숫자 데이터를 1개만 뱉는 쿼리문을 작성하여 서브쿼리로 사용할 수 있는데,
+IN() 안에서는 예외적으로 여러개의 행을 뱉는 서브쿼리문 작성가능
+
 (적어둘 게 생길 때 마다 계속 업데이트 예정.. 🫠)
