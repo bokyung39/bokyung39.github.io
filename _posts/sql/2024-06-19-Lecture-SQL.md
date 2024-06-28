@@ -1,5 +1,5 @@
 ---
-title: 📟 SQL & Database - sql문 작성할 때 유의해야 할 것들 모음📂
+title: 📟 SQL & Database - sql문 작성할 때 참고할 것들 모음📂
 author: bokyung
 date: 2024-06-19 00:00:00 +0800
 toc: true
@@ -43,5 +43,20 @@ image: https://codingapple.com/wp-content/uploads/2022/09/%EC%83%81%ED%92%88%EC%
 <br>
 문자나 숫자 데이터를 1개만 뱉는 쿼리문을 작성하여 서브쿼리로 사용할 수 있는데,
 IN() 안에서는 예외적으로 여러개의 행을 뱉는 서브쿼리문 작성가능
+<br>
+<br>
 
+> ## TABLE 대신 VIEW?
+
+<br>
+view는 실제 테이블처럼 사용할 수 있는 가상의 테이블이라고 할 수 있다<br>
+
+- 언제 사용? <br>
+     - join같은 작업을 하고 select해서 얻은 테이블을 저장해서 사용하고 싶을 때
+     - table에 컬럼 변경이 필요할 때 미리 실험해보는 용도 등등
+<br> 
+    
+create table해서 실제 테이블로 만들어 저장해도 되겠지만 view는 실제 테이블이 아니라서 테이블만큼 하드 용량을 많이 차지하지 않음! <br>
+<br>
+<br>
 (적어둘 게 생길 때 마다 계속 업데이트 예정.. 🫠)
