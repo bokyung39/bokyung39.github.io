@@ -14,10 +14,11 @@ image: https://github.com/user-attachments/assets/42e1e2ff-597c-4135-b3c9-45607e
 <!-- 띄어쓰기   &nbsp;   -->
 <!-- 이미지 사이즈   {: width="80%" height="80%" .normal} -->
 <!-- 이미지 {: .normal} <br> -->
+<!-- 이미지 ![img]() -->
 
 <br>
 <br>
-학습환경 : Mac, iTerm
+학습 환경 : Mac, iTerm
 <br>
 <br>
 
@@ -36,7 +37,7 @@ brew services info redis
 brew services stop redis
 ```
 
-<img width="724" alt="image" src="https://github.com/user-attachments/assets/d91a5baa-9f35-4c8a-9406-8a8906cb487d">{: width="80%" height="80%" .normal}
+![img](https://github.com/user-attachments/assets/d91a5baa-9f35-4c8a-9406-8a8906cb487d)
 
 ### ✔️ &nbsp;Redis 접속
 
@@ -47,7 +48,7 @@ redis-cli # Redis에 접속
 PONG # 이렇게 출력되면 정상적으로 Redis가 실행되고 있다는 뜻
 ```
 
-<img width="723" alt="image" src="https://github.com/user-attachments/assets/9143a3fd-d229-4ef4-acc3-718d314d7981">{: width="80%" height="80%" .normal}
+![img](https://github.com/user-attachments/assets/9143a3fd-d229-4ef4-acc3-718d314d7981)
 
 <br>
 
@@ -118,7 +119,7 @@ ttl bokyung:name # (integer) -1 출력
 ttl bk:name # (integer) -2 출력
 ```
 
-<img width="514" alt="image" src="https://github.com/user-attachments/assets/00326adb-04c9-4ccf-afae-bc025e081571">{: width="80%" height="80%" .normal}
+![img](https://github.com/user-attachments/assets/00326adb-04c9-4ccf-afae-bc025e081571)
 
 ### ✔️ &nbsp;모든 데이터 삭제하기
 
@@ -135,3 +136,10 @@ flushall # 성공 시 OK 출력
 
 - **users:100:profiles** : 사용자들(users)중에서 PK가 100인 사용자(user)의 프로필(profile)
 - **products:123:details** : 상품들(products)중에서 PK가 123인 상품(product)의 세부사항(details)
+
+<br>
+<br>
+
+#### 🔗 &nbsp;학습 강의 영상
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/krC8UCkk6vg?si=4XJlDuasWd0mZrZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
