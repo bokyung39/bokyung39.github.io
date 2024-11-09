@@ -5,7 +5,7 @@ date: 2024-03-20 00:00:00 +0800
 toc: true
 pin: false
 published: true
-categories: [Blogging, Etc]
+categories: [Blogging, Issue]
 tags: [RaspberryPi, extFS]
 image: https://github.com/bokyung39/intro-me/assets/72790694/51ca1bda-08b1-4939-a975-36c4bd0ffd1e
 ---
